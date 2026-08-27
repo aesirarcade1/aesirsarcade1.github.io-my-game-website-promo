@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Game - Coming Soon</title>
+    <style>
+        /* Base Styling & Synthwave Grid Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #0d011d;
+            background-image: 
+                linear-gradient(rgba(18, 1, 41, 0.4) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(18, 1, 41, 0.4) 1px, transparent 1px);
+            background-size: 40px 40px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Flyer Container */
+        .flyer-container {
+            width: 100%;
+            max-width: 500px;
+            background: linear-gradient(135deg, #150030 0%, #050010 100%);
+            border: 4px solid #ff007f;
+            border-radius: 12px;
+            padding: 40px 20px;
+            box-shadow: 0 0 30px rgba(255, 0, 127, 0.3), inset 0 0 15px rgba(0, 242, 254, 0.2);
+            text-align: center;
+            position: relative;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+
+        /* Neon Header Text */
+        .arcade-title {
+            font-size: 2.5rem;
+            color: #fffb00;
+            text-shadow: 0 0 10px #ffea00, 0 0 20px #ff9400;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0 0 5px 0;
+        }
+
+        .subtitle {
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            color: #00f2fe;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Image/Character Framing */
+        .hero-wrapper {
+            position: relative;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .hero-image {
+            width: 85%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 50%;
+            border: 6px solid #00f2fe;
+            box-shadow: 0 0 25px #00f2fe, 0 0 10px #ff007f;
+            background: #110022;
+        }
+
+        /* Game Title Styling */
+        .game-title {
+            font-size: 5rem;
+            line-height: 0.95;
+            text-transform: uppercase;
+            font-style: italic;
+            background: linear-gradient(to bottom, #00f2fe 0%, #9b00e8 50%, #ff007f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 0px 8px rgba(0, 242, 254, 0.6));
+            margin: 25px 0 0 0;
+        }
+
+        .lets-play {
+            font-family: 'Brush Script MT', cursive, sans-serif;
+            font-size: 3rem;
+            color: #fffb00;
+            text-shadow: 2px 2px 0px #ff007f;
+            transform: rotate(-5deg);
+            margin: -10px 0 20px 0;
+            display: block;
+        }
+
+        /* Animated CTA Link / Button */
+        .cta-btn {
+            display: inline-block;
+            background: #ff007f;
+            color: #ffffff;
+            font-size: 1.8rem;
+            text-decoration: none;
+            padding: 12px 40px;
+            border-radius: 50px;
+            border: 3px solid #00f2fe;
+            box-shadow: 0 0 15px #ff007f;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background: #00f2fe;
+            color: #050010;
+            border-color: #ff007f;
+            box-shadow: 0 0 25px #00f2fe;
+            cursor: pointer;
+        }
+
+        /* Bottom Footer Text */
+        .footer-desc {
+            font-family: sans-serif;
+            font-size: 0.75rem;
+            color: #a49fc2;
+            line-height: 1.6;
+            border-top: 1px dashed rgba(0, 242, 254, 0.3);
+            padding-top: 15px;
+            margin: 10px 15px 0 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flyer-container">
+        <!-- Top Banner -->
+        <h1 class="arcade-title">Arcade</h1>
+        <div class="subtitle">Next-Gen Retro Experience</div>
+
+        <!-- Character / Graphic Placement -->
+        <div class="hero-wrapper">
+            <!-- REPLACE THIS URL WITH A LINK TO YOUR GAME'S CHARACTER ART OR ARTWORK -->
+            <img src="https://stock.adobe.com/search?k=synthwave" alt="Game Character" class="random-art">
+        </div>
+
+        <!-- Big Bold Title Section -->
+        <h2 class="game-title">GAME</h2>
+        <span class="lets-play">Let's play</span>
+
+        <!-- Call to Action Button Redirecting to your Main Site -->
+        <!-- REPLACE THE HREF WITH YOUR ACTUAL GAME LINK -->
+        <a href="https://aesirsarcade.netlify.app" class="cta-btn" target="_blank">Play Now</a>
+
+        <!-- Bottom Blurb -->
+        <p class="footer-desc">
+            Dive into intense retro-fueled action. Accessible directly in your web browser. Compete for the highest scores worldwide and claim your spot on the neon leaderboard!
+        </p>
+    </div>
+
+</body>
+</html>
